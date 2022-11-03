@@ -66,64 +66,16 @@ obtenir de nouvelles fonctionnalités.
     - Comment une classe peut-elle être indépendante de la création des objets dont elle dépend ?
     - Comment une application, et les objets qu'elle utilise, peuvent-ils supporter différentes configurations ?
     - Comment modifier le comportement d'un morceau de code sans l'éditer directement ?
-  + Il y a trois façons principales dont un client peut recevoir des services injectés :
-    - Soit le service suivant :
-      ~~~python
-      class Service:
-        def __init__(self, name: str):
-          print(f"I'm {name}, the service.")
-      
-        def serves(self)->None:
-            print(f"I've done something for you.")   
-      ~~~   
-      ~~~python
-      from abc import ABC, abstractmethod
-      class Service(ABC): # interface/abstract base class
-      
-        @abstractmethod
-        def serves(self)->None:
-            pass  
-      ~~~  
+  + Il y a 5 façons principales, en Python, dont un client peut recevoir des services injectés :
     - [x] `Injection de constructeur`, où les dépendances sont fournies par le constructeur de classe d'un client.
-      ~~~python
-      from service import Service
-      class Client:
-        def __init__(self, name: str, service: Service):
-            print(f"I'm {name}, the client")
-            print(f"I'm using the service via constructor injection.")
-            service.serves()    
-      ~~~  
     - [x] `Injection de function par typage des canards`, où le client expose une méthode qui accepte la dépendance sans
            se soucier de savoir s'il est un canard, mais se soucie uniquement de savoir s'il fait coin-coin.
-      ~~~python
-      from service import Service
-      class Client:
-        def __init__(self):
-          print(f"I'm {name}, the client")
-      
-        def do_something(self, service: Service)->None:
-            print(f"I'm using the service via setter injection.")
-            service.serves()
-      ~~~  
-    - [x] `Injection d'interfaces ou parents`, où le interface ou la classe de base de la dépendance fournit une méthode 
-          d'injection qui injectera la dépendance dans tout client qui lui est passé.
-      ~~~python
-      from service import Servive
-      class Client(Service):
-        self.serves()
-    
-      ~~~
-    - [ ] `Sans injection de dépendance`, où le client construit et contrôle directement le Service dans le constructeur
+    - [x] `Injection de classe de base`, où la classe de base de la dépendance fournit une méthode d'injection que la 
+      dépendance utilisera par héritage.
+    - [x] `Injection d'interfaces`, où l'interface de la dépendance fournit une signature d'injection que la dépendance 
+      implémentera
+    - [x] `Sans injection de dépendance`, où le client construit et contrôle directement le Service dans le constructeur
           créant ainsi une dépendance codée en dur.
-      ~~~python
-      from service import Service
-      class Client:
-        def __init__(self):
-            print(f"I'm the client")
-            print(f"I'm using the service via hard coding.")
-            self.service = Service()
-            self.service.serves() 
-      ~~~ 
 - [ ] `Interpreter - Interprète`
   + Utilisé pour évaluer un langage ou une expression lors de la création d'une interface qui indique le contexte pour l'interprétation. 
 - [ ] `Iterator - Itérateur`
