@@ -3,6 +3,8 @@ Le module serviceza offre les services suivants :
 - serves()
 """
 from abc import ABC, abstractmethod
+from DesignPattern.logza import LogZa
+
 
 
 class ServiceZa:
@@ -11,14 +13,14 @@ class ServiceZa:
     """
 
     def __init__(self):
-        print(f"I'm ServiceZa, the service constructor.")
+        LogZa.log_za("Je suis le constructeur de ServiceZa.")
 
-    def serves(self)->None:
+    def serves(self) -> None:
         """
         Rend service à une tierce personne
         """
-        print(f"I'm ServiceZa, the service function.")
-        print(f"I did something cool for you.")
+        LogZa.log_za("Je suis une des fonctionnalités de ServiceZa.")
+        LogZa.log_za("J'ai fait quelque chose de cool pour vous!")
 
 
 class ServiceIntZa(ABC):
