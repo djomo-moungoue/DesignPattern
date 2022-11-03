@@ -1,4 +1,4 @@
-`Python : Exemples illustratrant l'usage contextuel des patron de conceptions`
+`Python : Exemples illustratrant l'usage contextuel des patrons de conception`
 
 # Creational Design Patterns - Patron de conception créative
 Les patrons de création fournissent divers mécanismes de création d'objets, qui augmentent la `flexibilité` et la 
@@ -105,7 +105,7 @@ obtenir de nouvelles fonctionnalités.
             print(f"I'm using the service via setter injection.")
             service.serves()
       ~~~  
-    - [x] `Injection d'interfaces ou parents`, où le interface ou le parent de la dépendance fournit une méthode 
+    - [x] `Injection d'interfaces ou parents`, où le interface ou la classe de base de la dépendance fournit une méthode 
           d'injection qui injectera la dépendance dans tout client qui lui est passé.
       ~~~python
       from service import Servive
