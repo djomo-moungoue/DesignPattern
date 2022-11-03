@@ -56,7 +56,7 @@ obtenir de nouvelles fonctionnalités.
   + Transforme une requête en un objet distinct qui contient toutes les informations relatives à la requête. Cette 
     transformation vous permet de paramétrer des méthodes avec différentes requêtes, de retarder ou de mettre en file 
     d'attente l'exécution d'une requête, et de prendre en charge des opérations qui ne peuvent pas être annulées. 
-- [ ] [`Depedency injection - Injection de dépendance`](https://en.wikipedia.org/wiki/Dependency_injection) 
+- [x] [`Depedency injection - Injection de dépendance`](https://en.wikipedia.org/wiki/Dependency_injection) 
   + En génie logiciel, l'injection de dépendances est un modèle de conception dans lequel un objet ou une fonction 
     reçoit d'autres objets ou fonctions dont il dépend. 
   + Ce modèle garantit qu'un objet ou une fonction qui souhaite utiliser un service donné ne doit pas savoir comment 
