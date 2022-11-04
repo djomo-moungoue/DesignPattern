@@ -1,4 +1,9 @@
-`Python : Exemples illustrant l'usage contextuel des patrons de conception`
+# Python 3 : Exemples illustrant l'usage contextuel des patrons de conception
+- Je vous recommande d'`exécuter` les exemples pour mieux comprendre les concepts.
+- j'ai `testé` ces exemples et ils fonctionnent tous comme prévu.
+- `N.B.` : 
+  - Tout `commentaire constructif` est le bien venu, parce que Rome n'a été construit en un seul jour. 
+  - Merci d'avance !
 
 # Creational Design Patterns - Patron de conception créative : Objets
 Les patrons de création fournissent divers mécanismes de création d'objets, qui augmentent la `flexibilité` et la 
