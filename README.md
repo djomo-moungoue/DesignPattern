@@ -1,6 +1,6 @@
 `Python : Exemples illustrant l'usage contextuel des patrons de conception`
 
-# Creational Design Patterns - Patron de conception créative
+# Creational Design Patterns - Patron de conception créative : Objets
 Les patrons de création fournissent divers mécanismes de création d'objets, qui augmentent la `flexibilité` et la 
 `réutilisation` du code existant d'une manière adaptée à la situation. Cela donne au programme plus de flexibilité pour 
 décider quels objets doivent être créés pour un cas d'utilisation donné.
@@ -9,48 +9,20 @@ décider quels objets doivent être créés pour un cas d'utilisation donné.
 - [ ] `Builder - Constructeur`
   + Il permet la production de différents types et représentations d'un objet en utilisant le même code de construction. 
   + Il est utilisé pour la création étape par étape d'un objet complexe en combinant des objets simples. La création finale 
-  des objets dépend des étapes du processus de création mais est indépendante des autres objets.
+  des objets dépend des étapes du processus de création, mais est indépendante des autres objets.
 - [ ] `Factory - Usine`
-  + Fournit une interface pour la création d'objets dans une superclasse mais permet aux sous-classes de modifier le type 
-  d'objets créés. Fournit l'instanciation implicite d'objets à travers des interfaces communes. 
+  + Il fournit une interface pour la création d'objets dans une superclasse, mais permet aux sous-classes de modifier le type 
+  d'objets créés. 
+  + Il fournit l'instanciation implicite d'objets à travers des interfaces communes. 
 - [ ] `Prototype`
   + Il vous permet de copier des objets existants sans faire dépendre votre code de leurs classes. Il est utilisé pour 
   limiter les opérations de mémoire/base de données en gardant la modification au minimum en utilisant des copies d'objets.
 - [ ] `Singleton`
-  + Ce modèle de conception limite l'instanciation d'une classe à un seul objet. 
+  + Ce modèle de conception limite l'instanciation d'une classe à un seul objet.
 
-# Structural Design Patterns - Patron de conception structurel
-Ils fournissent des solutions efficaces et des normes sur les compositions de classes et les structures d'objets. 
-Le concept d'héritage est utilisé pour composer des interfaces et définir des façons de composer des objets pour 
-obtenir de nouvelles fonctionnalités.
-
-- [ ] `Adapter - Adaptateur`
-  + Il est utilisé pour relier deux interfaces qui ne sont pas compatibles et utiliser leurs fonctionnalités. 
-  + L'adaptateur permet aux classes de travailler ensemble d'une manière qu'elles ne pourraient pas faire puisqu'il 
-    s'agit d'interfaces incompatibles.
-- [ ] `Bridge - Pont`
-  + Dans ce patron, il y a une modification structurelle des classes principale et d'implémentation d'interface sans 
-    qu'il y ait d'effet entre elles. Ces deux classes peuvent être développées indépendamment et ne sont connectées 
-    qu'en utilisant une interface comme pont.
-- [ ] `Composite`
-  + Il est utilisé pour regrouper des objets en un seul objet. Il permet de composer des objets en arborescence et de 
-    travailler ensuite avec ces structures comme s'il s'agissait d'objets individuels. 
-- [ ] `Decorator - Décorateur`
-  + Ce motif limite la modification de la structure de l'objet tout en lui ajoutant de nouvelles fonctionnalités. 
-  + La classe initiale reste inchangée, tandis qu'une classe décoratrice fournit des capacités supplémentaires. 
-- [ ] `Facade - Façade`
-  + Fournit une interface simplifiée à une bibliothèque, un framework ou tout autre ensemble complexe de classes.
-- [ ] `Flyweight`
-  + Le modèle Flyweight est utilisé pour réduire l'utilisation de la mémoire et améliorer les performances en réduisant 
-    la création d'objets. 
-  + Le modèle recherche des objets similaires qui existent déjà pour les réutiliser au lieu de créer de nouveaux objets similaires. 
-- [ ] `Proxy`
-  + Il est utilisé pour créer des objets qui peuvent représenter des fonctions d'autres classes ou objets, et 
-    l'interface est utilisée pour accéder à ces fonctionnalités. 
-
-# Behavioral Design Patterns - Patrons de conception du comportement
+# Behavioral Design Patterns - Patrons de conception du comportement : Algorithmes, relations, responsabilités
 - [ ] `Chain of Responsability - Chaîne de responsabilité`
-  + Le design pattern Chaîne de responsabilité est un pattern de comportement qui évite de coupler l'émetteur d'une requête 
+  + Le patron de conception Chaîne de responsabilité est un patron de comportement qui évite de coupler l'émetteur d'une requête 
     à son récepteur, donnant ainsi à plusieurs objets la possibilité de répondre à une requête.
 - [ ] `Command - Commande`
   + Transforme une requête en un objet distinct qui contient toutes les informations relatives à la requête. Cette 
@@ -88,7 +60,7 @@ obtenir de nouvelles fonctionnalités.
 - [ ] `Observer`
   + Il permet de définir un mécanisme d'abonnement pour notifier divers objets de tout événement survenant à l'objet observé. 
 - [ ] `State - État`
-  + Dans le pattern state, le comportement d'une classe varie en fonction de son état et est donc représenté par l'objet context. 
+  + Dans le patron state, le comportement d'une classe varie en fonction de son état et est donc représenté par l'objet context. 
 - [ ] `Strategy - Stratégie`
   + Il permet de définir une famille d'algorithmes, mais ceux-ci se trouvent dans une classe distincte et rendent leurs 
     objets interchangeables. 
@@ -96,4 +68,34 @@ obtenir de nouvelles fonctionnalités.
   + Utilisé avec des composants qui ont des similitudes où vous pouvez mettre en œuvre un modèle de code pour tester 
     les deux composants. Le code peut être changé avec des modifications mineures. 
 - [ ] `Visitor - Visiteur`
-  + Un pattern Visitor vise à définir une nouvelle opération sans apporter de modifications à une structure d'objet existante.  
+  + Un patron Visitor vise à définir une nouvelle opération sans apporter de modifications à une structure d'objet existante.  
+
+
+# Structural Design Patterns - Patron de conception structurel : Structures de données
+Ils fournissent des solutions efficaces et des normes sur les compositions de classes et les structures d'objets. 
+Le concept d'héritage est utilisé pour composer des interfaces et définir des façons de composer des objets pour 
+obtenir de nouvelles fonctionnalités.
+
+- [ ] `Adapter - Adaptateur`
+  + Il est utilisé pour relier deux interfaces qui ne sont pas compatibles et utiliser leurs fonctionnalités. 
+  + L'adaptateur permet aux classes de travailler ensemble d'une manière qu'elles ne pourraient pas faire puisqu'il 
+    s'agit d'interfaces incompatibles.
+- [ ] `Bridge - Pont`
+  + Dans ce patron, il y a une modification structurelle des classes principale et d'implémentation d'interface sans 
+    qu'il y ait d'effet entre elles. Ces deux classes peuvent être développées indépendamment et ne sont connectées 
+    qu'en utilisant une interface comme pont.
+- [ ] `Composite`
+  + Il est utilisé pour regrouper des objets en un seul objet. Il permet de composer des objets en arborescence et de 
+    travailler ensuite avec ces structures comme s'il s'agissait d'objets individuels. 
+- [ ] `Decorator - Décorateur`
+  + Ce motif limite la modification de la structure de l'objet tout en lui ajoutant de nouvelles fonctionnalités. 
+  + La classe initiale reste inchangée, tandis qu'une classe décoratrice fournit des capacités supplémentaires. 
+- [ ] `Facade - Façade`
+  + Fournit une interface simplifiée à une bibliothèque, un framework ou tout autre ensemble complexe de classes.
+- [ ] `Flyweight`
+  + Le modèle Flyweight est utilisé pour réduire l'utilisation de la mémoire et améliorer les performances en réduisant 
+    la création d'objets. 
+  + Le modèle recherche des objets similaires qui existent déjà pour les réutiliser au lieu de créer de nouveaux objets similaires. 
+- [ ] `Proxy`
+  + Il est utilisé pour créer des objets qui peuvent représenter des fonctions d'autres classes ou objets, et 
+    l'interface est utilisée pour accéder à ces fonctionnalités. 
