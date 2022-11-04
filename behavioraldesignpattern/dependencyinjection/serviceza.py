@@ -9,7 +9,7 @@ from DesignPattern.logza import LogZa
 
 class ServiceZa:
     """
-    ServiceZa vous offre différents services
+    La classe de basse ServiceZa vous offre différents services
     """
 
     def __init__(self):
@@ -25,7 +25,8 @@ class ServiceZa:
 
 class ServiceIntZa(ABC):
     """
-    interface/abstract base class
+    L'interface ou la classe abstraite ServiceIntZa vous offre des méthodes déclarées que vous pouvez
+    implémenter pour résoudre des problèmes spécifiques.
     """
 
     @abstractmethod
@@ -33,4 +34,4 @@ class ServiceIntZa(ABC):
         """
         Implémenter cette fonction si vous voulez rendre un service à quelqu'un.
         """
-        pass
+        raise NotImplementedError("Vous devriez implémenter cette méthode")

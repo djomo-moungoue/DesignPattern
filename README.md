@@ -1,4 +1,4 @@
-`Python : Exemples illustratrant l'usage contextuel des patrons de conception`
+`Python : Exemples illustrant l'usage contextuel des patrons de conception`
 
 # Creational Design Patterns - Patron de conception créative
 Les patrons de création fournissent divers mécanismes de création d'objets, qui augmentent la `flexibilité` et la 
@@ -72,8 +72,8 @@ obtenir de nouvelles fonctionnalités.
            se soucier de savoir s'il est un canard, mais se soucie uniquement de savoir s'il fait coin-coin.
     - [x] `Injection de classe de base`, où la classe de base de la dépendance fournit une méthode d'injection que la 
       dépendance utilisera par héritage.
-    - [x] `Injection d'interfaces`, où l'interface de la dépendance fournit une signature d'injection que la dépendance 
-      implémentera
+    - [x] `Injection d'interfaces ou de classe de base abstraite`, où l'interface ou a classe de base abstraite de la 
+      dépendance fournit une signature d'injection que la dépendance implémentera
     - [x] `Sans injection de dépendance`, où le client construit et contrôle directement le Service dans le constructeur
           créant ainsi une dépendance codée en dur.
 - [ ] `Interpreter - Interprète`
